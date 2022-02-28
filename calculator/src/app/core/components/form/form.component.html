@@ -1,3 +1,27 @@
-<div class="form">
-
+<div class="form" #form (click)="calc($event)">
+    <div class="col1">
+        <button class="col1-item col-item">+</button>
+        <button class="col1-item col-item">7</button>
+        <button class="col1-item col-item">4</button>
+        <button class="col1-item col-item">1</button>
+        <button class="col1-item col-item">0</button>
+    </div>
+    <div class="col2">
+        <button class="col2-item col-item">-</button>
+        <button class="col2-item col-item">8</button>
+        <button class="col2-item col-item">5</button>
+        <button class="col2-item col-item">2</button>
+        <button class="col2-item col-item">.</button>
+    </div>
+    <div class="col3">
+        <button class="col3-item col-item">x</button>
+        <button class="col3-item col-item">9</button>
+        <button class="col3-item col-item">6</button>
+        <button class="col3-item col-item">3</button>
+        <button class="col3-item col-item clear">AC</button>
+    </div>
+    <div class="col4">
+        <div class="col4-item col-item">&#xF7;</div>
+        <div class="col4-item col-item equal">=</div>
+    </div>
 </div>

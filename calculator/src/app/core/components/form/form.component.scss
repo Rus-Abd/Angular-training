@@ -1,5 +1,42 @@
 .form {
   width: 500px;
-  height: 500px;
+  height: 350px;
   background-color: rgb(112, 106, 106);
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-template-areas: "col1 col2 col3 col4" "col1 col2 col3 col4" "col1 col2 col3 col4";
+}
+
+.col1 {
+  grid-area: col1;
+}
+.col2 {
+  grid-area: col2;
+}
+.col3 {
+  grid-area: col3;
+}
+.col4 {
+  grid-area: col4;
+}
+.col-item {
+  width: 60px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #fff;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  border-radius: 6px;
+}
+.equal {
+  height: 226px;
+  background-color: #4a83be;
+}
+.clear {
+  background-color: #e65561;
 }

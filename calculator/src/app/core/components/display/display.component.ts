@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { DataService } from '../../services/data.service';
 @Component({
   selector: 'app-display',
   templateUrl: './display.component.html',
@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DisplayComponent implements OnInit {
   input: string = '';
-  constructor() {}
+  constructor(private dataservice: DataService) {}
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    this.dataservice.name.subscribe((data) => {
+      this.input = data;
+    });
+  }
 }
